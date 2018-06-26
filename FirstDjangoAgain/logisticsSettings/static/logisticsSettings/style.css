@@ -1,0 +1,46 @@
+.logoTopLeft{
+	width: 130px;
+}
+
+.subHeader{
+	margin-top: 0px;
+	background: url(images/baustelle-img2.png);
+	overflow: hidden;
+	background-position: center;
+	font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+	.subHeaderContainer{
+		margin-top: 70px;
+		margin-bottom: 90px;
+		font-size: 2em;
+	}
+
+		.siteName{
+			color: white;
+		}
+
+.attributesHeader1{
+	font-size: 2em;
+	padding-left: 10%;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	font-family: 'Rajdhani', 'Raleway', sans-serif;
+}
+
+.attributesButton1{
+	margin-left: 60px;
+	font-family: 'Rajdhani', 'Raleway', sans-serif;
+
+}
+
+	.attributesList1{
+		padding-left: 10%;
+		list-style-type: none;
+		font-family: 'Rajdhani', 'Raleway', sans-serif;
+	}
+
+		.attributesList1 li{
+			font-size: 1.3em;
+			margin:0px 0px 15px 0px; 
+		}

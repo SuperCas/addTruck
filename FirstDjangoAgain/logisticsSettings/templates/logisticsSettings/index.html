@@ -1,0 +1,25 @@
+{% extends 'logisticsSettings/base.html' %}
+{% load bootstrap4 staticfiles  %}
+
+{% block body %}
+
+<h3 class="attributesHeader1">LKW-Typen<button class="btn btn-default attributesButton1" href="get_name"><i class="far fa-plus-square"></i> &nbsp Add</button></h3>
+<ul class="attributesList1">
+	{% for trucktype in all_trucks %}
+	<li><a href="{% url 'logisticsSettings:detailView' trucktype.id %}"><i class="fas fa-truck"></i> &nbsp {{ trucktype.truck_name }}</a></li>
+	{% endfor %}
+</ul>
+
+<form action="/logisticsSettings/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+<form action="/logisticsSettings/" method="post">
+    <label for="your_name">LKW-Name</label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}
