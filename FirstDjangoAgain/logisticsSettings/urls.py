@@ -4,10 +4,13 @@ from . import views
 app_name = 'logisticsSettings'
 
 urlpatterns = [
-	# /l/
+	# /logisticsSettings/
 	re_path(r'^$', views.indexView, name='indexView'),
 
-	# /music/<album_id>/
+	# /logisticsSettings/<trucktype_id>/
 	re_path(r'^(?P<trucktype_id>\d+)/$', views.detailView, name='detailView'),
+
+	# /logisticsSettings/addTruck
+	re_path(r'^addTruck$', views.get_name, name='get_name'),
 
 ] 

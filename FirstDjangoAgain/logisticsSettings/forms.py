@@ -1,4 +1,8 @@
 from django import forms
+from logisticsSettings.models import Truck
 
-class NameForm(forms.Form):
-    your_name = forms.CharField(label='Your name', max_length=100)
+class NameForm(forms.ModelForm):
+	class Meta:
+		model = Truck
+		fields = ['truck_name']
+		labels = '__all__'

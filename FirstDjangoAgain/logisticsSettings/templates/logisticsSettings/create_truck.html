@@ -1,6 +1,12 @@
-<form action="/logisticsSettings/" method="post">
+{% extends 'logisticsSettings/base.html' %}
+{% load bootstrap4 staticfiles  %}
+
+{% block body %}
+
+<form action="{% url 'logisticsSettings:get_name' %}" method="post">
 	{% csrf_token %}
-    <label for="your_name">LKW-Name</label>
-    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+	{% bootstrap_form form %}
     <input type="submit" value="OK">
 </form>
+
+{% endblock %}
