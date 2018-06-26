@@ -1,5 +1,5 @@
 from .models import Truck
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect
 
 
@@ -27,7 +27,7 @@ def get_name(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/logisticsSettings/')
+            return HttpResponseRedirect('logisticsSettings:indexView')
 
     # if a GET (or any other method) we'll create a blank form
     else:
@@ -48,7 +48,7 @@ def editView(request, trucktype_id):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/logisticsSettings/')
+            return HttpResponseRedirect(reverse('logisticsSettings:indexView'))
 
     # if a GET (or any other method) we'll create a blank form
 

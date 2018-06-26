@@ -3,7 +3,7 @@
 
 {% block body %}
 
-<form action="{% url 'logisticsSettings:editView' %}" method="post">
+<form action="{% url 'logisticsSettings:editView' truckObject.id %}" method="post">
 	{% csrf_token %}
 	{% bootstrap_form form %}
     <input type="submit" value="Edit">
