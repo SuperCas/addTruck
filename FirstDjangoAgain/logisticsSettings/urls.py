@@ -13,4 +13,6 @@ urlpatterns = [
 	# /logisticsSettings/addTruck
 	re_path(r'^addTruck$', views.get_name, name='get_name'),
 
-] 
+	# /logisticsSettings/editTruck
+	re_path(r'^editTruck/(?P<trucktype_id>\d+)/$', views.editView, name='editView'),
+]

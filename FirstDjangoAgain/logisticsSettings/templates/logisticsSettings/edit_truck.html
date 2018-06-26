@@ -3,10 +3,10 @@
 
 {% block body %}
 
-<form action="{% url 'logisticsSettings:get_name' %}" method="post">
+<form action="{% url 'logisticsSettings:editView' %}" method="post">
 	{% csrf_token %}
 	{% bootstrap_form form %}
-    <input type="submit" value="Add">
+    <input type="submit" value="Edit">
 </form>
 
 {% endblock %}
