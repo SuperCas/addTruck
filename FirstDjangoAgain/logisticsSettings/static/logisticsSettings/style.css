@@ -20,27 +20,65 @@
 			color: white;
 		}
 
-.attributesHeader1{
-	font-size: 2em;
-	padding-left: 10%;
+.attributesRow1{
+	padding-top: 50px;
 	padding-bottom: 20px;
-	margin-top: 50px;
 	font-family: 'Rajdhani', 'Raleway', sans-serif;
 }
 
-.attributesButton1{
-	margin-left: 60px;
-	font-family: 'Rajdhani', 'Raleway', sans-serif;
+	.attributesButton1{
+		margin-top: 15px;
+	}
 
-}
 
 	.attributesList1{
-		padding-left: 10%;
 		list-style-type: none;
 		font-family: 'Rajdhani', 'Raleway', sans-serif;
 	}
 
 		.attributesList1 li{
 			font-size: 1.3em;
-			margin:0px 0px 15px 0px; 
+			margin:5px 0px 5px 0px; 
 		}
+
+	.attributesListButtons1{
+		font-family: 'Rajdhani', 'Raleway', sans-serif;
+	}
+
+.deleteHeader{
+	font-size: 2em;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	font-family: 'Rajdhani', 'Raleway', sans-serif;
+	text-align: center;
+}
+
+	.deleteButton{
+		width: 10%;
+		margin-left: 45%;
+	}
+
+.editButton{
+	width: 10%;
+	margin-left: 45%;
+}
+
+.createButton{
+	width: 10%;
+	margin-left: 45%;
+}
+
+.detailHeader{
+	font-size: 2em;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	font-family: 'Rajdhani', 'Raleway', sans-serif;
+	text-align: center;
+}
+
+	.detailPoint{
+		font-size: 1.5em;
+		margin-top: 50px;
+		font-family: 'Rajdhani', 'Raleway', sans-serif;
+		text-align: center;
+	}

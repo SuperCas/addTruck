@@ -11,8 +11,11 @@ urlpatterns = [
 	re_path(r'^(?P<trucktype_id>\d+)/$', views.detailView, name='detailView'),
 
 	# /logisticsSettings/addTruck
-	re_path(r'^addTruck$', views.get_name, name='get_name'),
+	re_path(r'^addTruck$', views.createView, name='createView'),
 
 	# /logisticsSettings/editTruck
 	re_path(r'^editTruck/(?P<trucktype_id>\d+)/$', views.editView, name='editView'),
+
+	# /logisticsSettings/deleteTruck
+	re_path(r'^deleteTruck/(?P<trucktype_id>\d+)/$', views.deleteView, name='deleteView'),
 ]

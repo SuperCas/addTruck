@@ -4,11 +4,11 @@
 {% block body %}
 
 
-<h1>{{ truck_details.truck_name }}</h1>
-<h2>Weight:{{ truck_details.weight }}</h2>
-<h2>Length:{{ truck_details.length }}</h2>
-<h2>Width:{{ truck_details.width }}</h2>
-<h2>Height:{{ truck_details.height }}</h2>
+<h1 class="detailHeader">{{ truck_details.truck_name }}</h1>
+<h2 class="detailPoint">Weight:&nbsp{{ truck_details.weight }}</h2>
+<h2 class="detailPoint">Length:&nbsp{{ truck_details.length }}</h2>
+<h2 class="detailPoint">Width:&nbsp{{ truck_details.width }}</h2>
+<h2 class="detailPoint">Height:&nbsp{{ truck_details.height }}</h2>
 
 
 {% endblock %}
